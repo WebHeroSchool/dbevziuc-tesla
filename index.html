@@ -6,226 +6,74 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>tesla</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="fonts/fonts.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="title">
-        <div class="header">
-            <img src="img/tesla-logo.svg" class="header__logo" alt="logo">
-            <nav class="menu">
-                <div class="menu__items">
-                    <a href="#" class="menu-items__link menu-items__link-active">Model S</a>
-                    <div class="menu-link__lines"></div>
-                </div>
-                <div class="menu__items">
-                    <a href="#" class="menu-items__link">Model X</a>
-                </div>
-                <div class="menu__items">
-                    <a href="#" class="menu-items__link">Model 3</a>
-                </div>
-                <div class="menu__items">
-                    <a href="#" class="menu-items__link">Roadster</a>
-                </div>
-                <div class="menu__items">
-                    <a href="#" class="menu-items__link">Energy</a>
-                </div>
-            </nav>
-            <nav class="second-menu">
-                <a href="#" class="second-menu__item">Магазин</a>
-                <a href="#" class="second-menu__item">Войти</a>
-                <div class="second-menu__btn">
-                    <span class="second-menu__btn-item second-menu__btn-item__first"></span>
-                    <span class="second-menu__btn-item second-menu__btn-item__second"></span>
-                    <span class="second-menu__btn-item second-menu__btn-item__third"></span>
-                </div>
-            </nav>
-        </div>
-        <div class="wrapper">
-            <div class="wrap">
-                <h1 class="wrap__title">Model S</h1>
-                <span class="wrap__subtitle">Добро пожаловать в будущее!</span>
-                <img src="img/Tesla logo-car.png" alt="" class="wrap__img">
+    <header class="header">
+        <div class="header__container">
+            <div class="header__nav">
+             <div class="header__logo logo">
+                 <img src="img/logo.png" alt="logo" class="logo__img">
+             </div>
+             <nav class="header__menu ">
+                 <a href="#" class="menu__item menu__item-active">Model S</a>
+                 <a href="#" class="menu__item">Model X</a>
+                 <a href="#" class="menu__item">Model 3</a>
+                 <a href="#" class="menu__item">Roadster</a>
+                 <a href="#" class="menu__item">Energy</a>
+             </nav>
+             <div class="header__shop shop">
+                 <a href="#" class="shop__link">Магазин</a>
+                 <a href="#" class="shop__link">Войти</a>
+                 <button class="shop__btn">
+                     <img src="img/icons/menu.svg" alt="">
+                 </button>
+             </div>
             </div>
-        </div>
-        <section class="first__info">
-            <div class="infoWrap">
-                <article class="infoBlock">
-                    <img class="infoBlock__img infoBlock__img-firstSize" src="img/speedo.svg" alt="">
-                    <div class="infoBlock__data">
-                        <h4 class="infoBlock__data-title">2,7 <span>сек</span></h4>
-                        <p class="infoBlock__data-text">0-100 км/час</p>
-                    </div>
-                </article>
-                <article class="infoBlock">
-                    <img class="infoBlock__img infoBlock__img-secondSize" src="img/road.svg" alt="">
-                    <div class="infoBlock__data">
-                        <h4 class="infoBlock__data-title">632 <span>км</span></h4>
-                        <p class="infoBlock__data-text">запас хода</p>
-                    </div>
-                </article>
+            <div class="header__title title">
+                <h1 class="title__model">Model S</h1>
+                <h2 class="title__slogan">Добро пожаловать в будущее!</h2>
+                <img class="title__image" src="./img/fill_car.png" alt="Tesla - model S">
+                <div class="title__overlay"><img src="./img/tesla.svg" alt=""></div>
             </div>
-            <article class="btn-block">
-                <div class="btn-block__info">
-                    <a class="btn-block__info-link" href="#">
-                        <div class="btn-block__info-img">
-                            ТЕСТ ДРАЙВ
+            <div class="header__specific specific">
+                <div class="specific__list">
+                    <div class="specific__item">
+                        <div class="specific__icon">
+                            <img src="./img/icons/speed.svg" alt="">
                         </div>
-                    </a>
+                        <div class="specific__info">
+                            <div class="specific__value"><span>2,7</span>сек</div>
+                            <div class="specific__descr">0-100 км / час</div>
+                        </div>
+                    </div>
+                    <div class="specific__item">
+                        <div class="specific__icon">
+                            <img src="./img/icons/road.svg" alt="Запас хода">
+                        </div>
+                        <div class="specific__info">
+                            <div class="specific__value"><span>632</span>км</div>
+                            <div class="specific__descr">запас хода</div>
+                        </div>
+                    </div>
+                    <div class="specific__item-test">
+                        <div class="specific__icon">
+                            <img src="img/icons/weeles.svg" alt="" class="specific__icon-test">
+                        </div>
+                        <div class="specific__value specific__value-up">тест драйв</div>
+                    </div>
+                    <div class="specific__item">
+                        <a href="#" class="specific__btn">заказать</a>
+                    </div>
                 </div>
-                <button class="btn-block__button">ЗАКАЗАТЬ</button>
-            </article>
-        </section>
+            </div>
+            <div class="header__arrow">
+                <a class="arrow__link" href="#">
+                    <img class="arrow__image" src="./img/icons/arrow.svg" alt="Далее">
+                </a>
+            </div>
+        </div>
     </header>
-    <section class="model">
-        <span class="model-title">Model S</span>
-        <div class="model-background"></div>
-        <aside class="model-aside">
-            <div class="model-aside-inner">
-                <h2 class="model-aside-inner__title">будущее вождения</h2>
-                <p class="model-aside-inner__text">Модель S обладает лучшей в своем классе вместимостью: в машине
-                    поместится до пяти взрослых и двух детей. Оснащена современным 17-дюймовым сенсорным экраном.
-                    Усовершенствованная шумовая инженерия создает динамику звука, сравнимую с студией звукозаписи, а стеклянная
-                    крыша обеспечивает просторный интерьер для каждого пассажира.</p>
-                <div class="model-specifics">
-                    <div class="model-specifics__item model-specifics-inner">
-                        <img src="img/screen.svg" alt="screen" class="model-specifics-inner__img">
-                        <p class="model-specifics-inner__title">Беспроводное<br>обновление ПО</p>
-                    </div>
-                    <div class="model-specifics__item model-specifics-inner model-specifics-inner__margin">
-                        <img src="img/range.svg" alt="range" class="mode-specifics-inner__img">
-                        <p class="mode-specifics-inner__title "><span class="model-s-specifics-inner__number">849</span>литра</p>
-                    </div>
-                    <div class="model-specifics-btn">
-                        <img src="img/attention.svg" alt="">
-                        <button class="model-specifics-btn__item-transparent">узнать больше</button>
-                        <button class="model-specifics-btn__item">заказать</button>
-                    </div>
-                </div>
-            </div>
-        </aside>
-    </section>
-    <section class="info">
-        <aside class="info-aside">
-            <div class="info-aside-inner">
-                <div class="info-asider-inner__title">Самый безопасный автомобиль в мире</div>
-                <div class="info-aside-inner__text">Модель S достигла наивысшей оценки безопасности любого автомобиля,
-                    когда-либо испытанного, и установила рекорд по наименьшей вероятности травмы пассажиров - от несчастных
-                    случаев на переднем, боковом, заднем сидении и в ДТП с переворотом авто.</div>
-                <div class="info-mark">
-                    <div class="info-mark__title">Оценка защиты:</div>
-                    <div class="info-marks-levels">
-                        <div class="info-mark-sides">
-                            <span class="info-mark-sides__text">спереди</span>
-                            <span class="info-mark-sides__text">сбоку</span>
-                            <span class="info-mark-sides__text">сбоку</span>
-                            <span class="info-mark-sides__text">водитель</span>
-                            <span class="info-mark-sides__text">пассажир</span>
-                        </div>
-                        <div class="info-mark-stars">
-                            <div class="info-mark-stars-row">
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                            </div>
-                            <div class="info-mark-stars-row">
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                            </div>
-                            <div class="info-mark-stars-row">
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                            </div>
-                            <div class="info-mark-stars-row">
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                            </div>
-                            <div class="info-mark-stars-row">
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                                <span class="info-mark-stars-bar">
-                                    <img src="img/star.png" alt="" class="info-mark-star-bar__img">
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="info-values">
-                        <img src="img/shield.svg" alt="" class="info-btn__img">
-                        <div class="info-values-inner info-values-archievement">
-                            <p class="info-values__title"><span class="info-values__number">5</span>звезд</p>
-                            <p class="info-values__subtitle">безопасности</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="info-btn">
-                    <img src="img/attention.svg" alt="">
-                    <button class="info-btn__item-transparent">узнать больше</button>
-                    <button class="info-btn__item">заказать</button>
-                </div>
-            </div>
-        </aside>
-        <div class="info-img"></div>
-    </section>
 </body>
 </html>
