@@ -13,64 +13,69 @@
     <header class="title">
         <div class="header">
             <img src="img/tesla-logo.svg" class="header__logo" alt="logo">
-            <nav class="nav">
-                <div class="nav__items nav__link">
-                    <a href="#" class="nav-link__items nav-link__items-active">Model S</a>
-                    <div class="nav-link__line"></div>
+            <nav class="menu">
+                <div class="menu__items">
+                    <a href="#" class="menu-items__link menu-items__link-active">Model S</a>
+                    <div class="menu-link__lines"></div>
                 </div>
-                <div class="nav__items nav__link">
-                    <a href="#" class="nav-link__items nav-link__items-active">Model X</a>
+                <div class="menu__items">
+                    <a href="#" class="menu-items__link">Model X</a>
                 </div>
-                <div class="nav__items nav__link">
-                    <a href="#" class="nav-link__items nav-link__items-active">Model 3</a>
+                <div class="menu__items">
+                    <a href="#" class="menu-items__link">Model 3</a>
                 </div>
-                <div class="nav__items nav__link">
-                    <a href="#" class="nav-link__items nav-link__items-active">Roadster</a>
+                <div class="menu__items">
+                    <a href="#" class="menu-items__link">Roadster</a>
                 </div>
-                <div class="nav__items nav__link">
-                    <a href="#" class="nav-link__items nav-link__items-active">Energy</a>
+                <div class="menu__items">
+                    <a href="#" class="menu-items__link">Energy</a>
                 </div>
             </nav>
-            <nav class="nav-second">
-                <a href="#" class="nav-second__item">Магазин</a>
-                <a href="#" class="nav-second__item">Войти</a>
-                <div class="nav-menu">
-                    <span class="nav-menu__line"></span>
-                    <span class="nav-menu__line"></span>
-                    <span class="nav-menu__line"></span>
+            <nav class="second-menu">
+                <a href="#" class="second-menu__item">Магазин</a>
+                <a href="#" class="second-menu__item">Войти</a>
+                <div class="second-menu__btn">
+                    <span class="second-menu__btn-item second-menu__btn-item__first"></span>
+                    <span class="second-menu__btn-item second-menu__btn-item__second"></span>
+                    <span class="second-menu__btn-item second-menu__btn-item__third"></span>
                 </div>
             </nav>
         </div>
-        <div class="chapter">
-            <h1 class="chapter__title">Model S</h1>
-            <span class="chapter__subtitle">Добро пожаловать в будущее!</span>
-        </div>
-        <div class="chapter-background"></div>
-
-        <div class="specifics">
-            <div class="specifics-inner">
-                <div class="specifics-inner__item">
-                    <div class="specifics-box">
-                        <img src="img/speedo.svg" alt="speedo" class="specifics-box__img">
-                        <div class="specifics-box__item specifics-info">
-                            <p class="specifics-box__title">2,6 сек</p>
-                            <span class="specifics-box__subtitle">0-100км/ча</span>
-                        </div>
-                    </div>
-                    <div class="specifics-box">
-                        <img src="img/road.svg" alt="road" class="specifics-box__img">
-                        <div class="specifics-box__item specifics-info">
-                            <p class="specifics-box__title">2,6 сек</p>
-                            <span class="specifics-box__subtitle">0-100км/ча</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="specifics-order">
-                    <button class="specifics-oreder__button-test">тест драйв</button>
-                    <button class="specifics-order__button">заказать</button>
-                </div>
+        <div class="wrapper">
+            <div class="wrap">
+                <h1 class="wrap__title">Model S</h1>
+                <span class="wrap__subtitle">Добро пожаловать в будущее!</span>
+                <img src="img/Tesla logo-car.png" alt="" class="wrap__img">
             </div>
         </div>
+        <section class="first__info">
+            <div class="infoWrap">
+                <article class="infoBlock">
+                    <img class="infoBlock__img infoBlock__img-firstSize" src="img/speedo.svg" alt="">
+                    <div class="infoBlock__data">
+                        <h4 class="infoBlock__data-title">2,7 <span>сек</span></h4>
+                        <p class="infoBlock__data-text">0-100 км/час</p>
+                    </div>
+                </article>
+                <article class="infoBlock">
+                    <img class="infoBlock__img infoBlock__img-secondSize" src="img/road.svg" alt="">
+                    <div class="infoBlock__data">
+                        <h4 class="infoBlock__data-title">632 <span>км</span></h4>
+                        <p class="infoBlock__data-text">запас хода</p>
+                    </div>
+                </article>
+            </div>
+            <article class="btn-block">
+                <div class="btn-block__info">
+                    <a class="btn-block__info-link" href="#">
+                        <div class="btn-block__info-img">
+                            ТЕСТ ДРАЙВ
+                        </div>
+                    </a>
+                </div>
+                <button class="btn-block__button">ЗАКАЗАТЬ</button>
+            </article>
+        </section>
     </header>
     <section class="model">
         <span class="model-title">Model S</span>
