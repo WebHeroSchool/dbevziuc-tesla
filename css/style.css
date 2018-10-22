@@ -208,6 +208,215 @@ body {
 .header__arrow:hover {
     cursor: pointer;
 }
+.specifications{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.specifications__wrap{
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+}
+.figure__title {
+    color: #e51937;
+    font-size: 70px;
+    font-weight: 600;
+    margin-left: 80px;
+}
+.image {
+    background: url('../img/wheel.jpg') no-repeat;
+    width: 100%;
+    background-position-x: -250px;
+    background-position-y: 100px;
+}
+.image__title {
+    color: #e51937;
+    font-size: 70px;
+    font-weight: 600;
+    margin-left: 80px;
+}
+.aside {
+    width: 440px;
+    background-color: #E51937;
+    color: #ffffff;
+    padding: 45px;
+}
+.aside__title {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 37px;
+    margin-bottom: 11px;
+}
+.aside__descr {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: medium;
+    margin-bottom: 55px;
+}
+.merits__icon {
+    height: 60px;
+    margin-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.merits__value {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+} 
+.merits__value span {
+    font-size: 35px;
+}
+.merits__descr {
+    font-weight: normal;
+    font-size: 12px;
+}
+.merits__info {
+    margin-top: 4px;
+}
+.merits__list_vertical {
+    display: flex;
+    flex-direction: column;
+}
+.merits__list_vertical .merits__item {
+    margin-right: 0;
+    margin-bottom: 35px;
+    display: flex;
+}
+.moreinfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.moreinfo__info {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+.moreinfo__image {
+    margin-right: 10px;
+}
+.moreinfo__order {
+    padding: 11px 22px;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s;
+}
+.moreinfo__order:hover {
+    color: #E51937;
+    background-color: #ffffff;
+    transition: .3s;
+}
+
+.specifications__aside .moreinfo { 
+    margin-top: 150px;
+}
+.protection__wrap{
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.protection {
+    display: flex;
+    justify-content: center;
+}
+.rating__title {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+.rating__list {
+    padding-right: 30px;
+    margin-bottom: 100px;
+}
+.rating__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+.rating__name {
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+.rating__name span{
+    opacity: .7;
+    font-size: 10px;
+    margin-left: 10px;
+}
+.rating__assessment{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+}
+.generalization {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.generalization__value {
+    font-size: 47px;
+    font-weight: bold;
+}
+.generalization__nominat {
+    font-size: 25px;
+}
+.generalization__image{
+    margin-right: 20px;
+}
+.detailing {
+    display: flex;
+    align-items: center;
+}
+.detailing__images {
+    position: relative;
+}
+.detailing__object {
+    margin-left: -100px;
+}
+.detailing__overlay {
+    position: absolute;
+    top: 50px;
+    z-index: -2;
+    right: 0;
+}
+.detailing__object img {
+    width: 100%;
+} 
+.created {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.created__name {
+    display: flex;
+    align-items: center;
+    font-size: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.created__name span {
+    color: #ffd22e;
+    font-size: 15px;
+    text-transform: none;
+    margin-left: 5px;
+}
+.created__descr {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 8px;
+}
 
 
 
@@ -257,6 +466,33 @@ body {
         top: 70px;
         left: auto;
     }
+    .protection__wrap{
+      width: 100%;
+      flex-direction: column-reverse;
+    }
+    .protection__aside{
+        width: 100%;
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        box-sizing: border-box;
+        flex-wrap: wrap
+    }
+  
+    .protection__aside .aside__moreinfo {
+        width: 100%;
+        justify-content: center;
+    }
+    .moreinfo__info span{
+        padding: 10px;
+    }
+    .detailing__object{
+        margin-left: 0;
+    }
+    .created{
+        bottom: 10px;
+        right: 10px;
+    }
 }
 
 @media screen and (max-width: 1090px) {
@@ -278,6 +514,9 @@ body {
     .title__overlay {
         top: 100px;
     }
+    .merits__list_vertical {
+    align-items: flex-start;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -308,6 +547,47 @@ body {
     }
     .specific__value_up {
         font-size: 16px;
+    }
+    .specifications__wrap {
+        flex-direction: column;
+    }
+    .specifications__image {
+        background: url('../img/wheel-m.jpg') no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 300px;
+        background-position-x: 0;
+        background-position-y: 0;
+    }
+    .aside{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px 30px;
+    }
+    .aside__merits {
+        display: none;
+    }
+    .aside__moreinfo {
+        display: none;
+    }
+    .aside__rating {
+        display: none;
+    }
+    .aside__generalization {
+        display: none;
+    }
+    .created {
+        display: none;
+    }
+    .aside__descr {
+        margin-bottom: 0;
+        font-size: 15px;
+    }
+    .figure__title {
+        margin-top: 0;
+    }
+    .figure__title {
+        display: none;
     }
 }
 
@@ -354,6 +634,9 @@ body {
     }
     .specific__icon-test path {
         fill: #e51937;
+    }
+    .specifications__figure{
+      height: 200px;
     }
 }
 
